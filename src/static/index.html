@@ -13,8 +13,20 @@
     </header>
 
     <main>
+
       <section id="activities-container">
         <h3>Available Activities</h3>
+        <div id="activities-toolbar" style="margin-bottom: 18px;">
+          <input type="text" id="search-box" placeholder="Search activities..." style="padding: 7px; width: 180px; margin-right: 10px;" />
+          <select id="sort-select" style="padding: 7px; margin-right: 10px;">
+            <option value="name">Sort by Name</option>
+            <option value="schedule">Sort by Schedule</option>
+          </select>
+          <!-- Category filter placeholder for future: -->
+          <select id="category-select" style="padding: 7px;" disabled>
+            <option value="">Filter by Category (coming soon)</option>
+          </select>
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
